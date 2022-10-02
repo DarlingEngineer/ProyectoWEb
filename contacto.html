@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Contacto-Barbería Santiago</title>
+        <link rel="stylesheet " href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img  class="imagen1" src="objeto1.jpg" alt="Logo de la barbería Santiago"></h1><!--"alt" se utiliza para describir la imagen cuando no carga-->
+                <nav>
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Products</a></li>
+                        <li><a href="http://www.google.com">Contact</a></li>
+                     </ul>
+                </nav>
+            </div>
+            
+            
+
+        </header>
+        <main>
+           <form>
+            <label for="nombreApellido">Nombre y Apellido</label> <!-- debe de llevar un label para asociar el titulo con el input-->
+            <input type="text" id="nombreApellido" class="input-padron" required> <!--se crea la identidad y se relaciona por medio de un for con la entrada(input)-->
+            <label for="email">Correo Electronico</label>                           <!--required significa campo obligatorio-->
+            <input type="text" id="correoElectronico"class="input-padron" required placeholder="email@dominio.com">
+            <label for="tel">Telefono</label>
+            <input type="text" id="telefono"class="input-padron" required placeholder="(XX) XXXX XXXX">   <!--placeholder esw un mensaje de que estamoes esperanod que ingrese el usuario-->
+            <label for="mensaje">Mensaje</label>
+            <textarea  id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+            <fieldset> <!--agrupa items que pertenecen al mismo grupo, division de nuestro formulario-->
+              <p>¿Cómo le gustaría que lo contactemos?</p>
+              <label for="radio-email"><input type="radio" name="contacto" value="Email" id="radio-email">Email</label>
+              <!--es como darle un apellido con el "name"-->
+
+              <label for="radio-telefono"><input type="radio" name="contacto"value="Telefono" id="radio-telefono">Telefono</label>
+             
+
+              <label for="radio-whatsapp"> <input type="radio" name="contacto" value="Email" id="radio-whatsapp" checked>Whatsapp</label>  <!--definir un campo por defecto con "checked"-->
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En que horario prefiere ser atendido?</legend> <!--etiqueta de contenido como un "p"-->
+                <select>
+                 <option>Mañana</option>
+                 <option>Tarde</option>
+                 <option>Noche</option>
+
+                </select>
+            </fieldset>
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la barbería Santiago?</label>
+
+            <input type="submit" value="Enviar Formulario" class="enviar"> <!--submit para crear un boton y el value para colocar un texto      -->
+
+           </form> 
+           <table>
+                <thead> <!--emcabezado de la tabla-->
+                     <tr>
+                        <th>Días</th>
+                        <th>Horario</th>
+                     </tr>
+                </thead>
+                <tbody><!--cuerpo de la tabla-->
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8am -10pm</td>
+                    </tr>
+                    <tr>  <!--crear filas en una tabla-->
+                        <td>Miercoles</td>
+                        <td>8am-10pm</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8am-10pm</td>
+                    </tr>
+                     <tr>
+                        <td>Sabado</td>
+                        <td>10am-11om</td>
+                    </tr>
+                </tbody>
+             
+           </table>
+
+
+
+
+        </main>
+        <footer>  <!--Es para agregar un pie de pagina-->
+            <img  class="imagen5" src="images" alt="Logo de concesionarío">
+            <p class="copyright"> &copy Copyrigth Concesionario</p>
+
+        </footer>
+
+
+     </body>
+</html>
